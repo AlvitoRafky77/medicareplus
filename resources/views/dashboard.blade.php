@@ -100,58 +100,6 @@
   </style>
  </head>
  <body>
-<<<<<<< HEAD
-  <nav class="navbar navbar-expand-lg navbar-dark">
-   <div class="container">
-    <a class="navbar-brand" href="#">
-     MEDICARE+
-    </a>
-    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-     <span class="navbar-toggler-icon">
-     </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-       <a class="nav-link" href="{{ route('dashboard') }}">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Tentang Kita
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="{{ route('layanan') }}">
-        Layanan
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Forum
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Artikel
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Kontak
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="{{ route('edit') }}" method="POST">
-        <i class="fas fa-user-circle profile-icon"></i>
-       </a>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </nav>
-=======
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
           <a class="navbar-brand" href="#">MEDICARE+</a>
@@ -181,8 +129,7 @@
             </ul>
           </div>
         </div>
-      </nav>      
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
+      </nav>
   <section class="hero-section">
    <div class="container">
     <h1>
@@ -208,7 +155,7 @@
                 <box-icon type="solid" name="collection" color="white"></box-icon>
               </div>
             </div>
-          </div>                    
+          </div>
      <div class="col-md-4">
         <div class="card text-center" style="background-color: #BFD2F8;">
           <div class="card-body d-flex justify-content-between align-items-center" style="color: #1F2B6C;">
@@ -228,7 +175,7 @@
             <ion-icon name="people"></ion-icon>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
    </div>
   </section>
@@ -383,6 +330,6 @@
             <p>© 2021 Hospital's name All Rights Reserved by PNTEC-LTD</p>
         </div>
     </div>
-</footer>   
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

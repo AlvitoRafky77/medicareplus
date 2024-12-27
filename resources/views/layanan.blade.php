@@ -10,14 +10,6 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
-<<<<<<< HEAD
-        .navbar {
-            background-color: #0B185E;
-        }
-        .navbar-brand {
-            color: #fff;
-            font-weight: bold;
-=======
         .gradient-line {
             height: 40px;
             background: linear-gradient(to left, #0B185E, #0B185E, lightblue);
@@ -31,24 +23,17 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: #fff;
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
         }
         .navbar-nav .nav-link {
             color: #fff;
         }
         .navbar-nav .nav-link .fas {
-<<<<<<< HEAD
-            font-size: 1.5rem; /* Increase the size of the profile icon */
-=======
             font-size: 1.5rem;
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
         }
         .header-image {
             width: 100%;
             height: auto;
         }
-<<<<<<< HEAD
-=======
         .service-item {
             background-color: #ecf0f1;
             padding: 20px;
@@ -61,7 +46,6 @@
             margin-bottom: 20px;
         }
 
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
         .services-section {
             text-align: center;
             padding: 50px 20px;
@@ -80,23 +64,15 @@
         .services-grid {
             background-color: #2c3e50;
             padding: 50px 20px;
-<<<<<<< HEAD
-            border-radius: 15px;
-=======
             margin-bottom: 40px;
             border-radius: 15px;
             margin-top: 40px;
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
         }
         .service-item {
             background-color: #ecf0f1;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-<<<<<<< HEAD
-            margin-bottom: 20px;
-=======
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
         }
         .service-item h5 {
             color: #2c3e50;
@@ -107,11 +83,7 @@
             color: #3498db;
         }
         .footer {
-<<<<<<< HEAD
-            background-color: #2c3e50;
-=======
             background-color: #1F2B6C;
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
             color: #fff;
             padding: 20px 0;
         }
@@ -133,43 +105,15 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
-            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-=======
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
             <a class="navbar-brand" href="#">MEDICARE+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-<<<<<<< HEAD
-                        <a class="nav-link" href="{{ route('dashboard') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Layanan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Artikel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}" method="POST"><i class="fas fa-user-circle"></i></a>
-=======
                         <a class="nav-link text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -186,31 +130,20 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Kontak</a>
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
                     </li>
                 </ul>
             </div>
         </div>
-<<<<<<< HEAD
     </nav>
-    <header>
-        <img alt="Doctor holding a clipboard" class="header-image" height="600" src="https://storage.googleapis.com/a1aa/image/XxpAevYDq4SHLSGTeusKRtQOV3IXRPowc4nsyn4pWEMCsDenA.jpg" width="1920"/>
-    </header>
-=======
-    </nav> 
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
     <section class="services-section">
         <h3 class="subheading">WELCOME TO OUR SERVICES</h3>
         <h2>LAYANAN KAMI</h2>
-        <p>Di MediCare+, kami menghadirkan berbagai layanan yang dirancang khusus untuk mendukung perjalanan kesehatan Anda. Mulai dari pencarian fasilitas kesehatan hingga konsultasi langsung dengan ahli, kami berkomitmen memberikan kemudahan dan kenyamanan bagi Anda.</p>
-        <p>Jelajahi fitur-fitur kami yang interaktif dan informatif, termasuk forum diskusi, kuis kesehatan, kalkulator kesehatan, dan masih banyak lagi. Semua ini kami sediakan untuk membantu Anda mengambil langkah proaktif dalam menjaga dan meningkatkan kualitas hidup.</p>
+        <p>Di MediCare+, kami menghadirkan berbagai layanan yang dirancang khusus untuk mendukung perjalanan kesehatan Anda. Mulai dari pencarian fasilitas kesehatan hingga konsultasi langsung dengan ahli, kami berkomitmen memberikan kemudahan dan kenyamanan bagi Anda.<br>
+            Jelajahi fitur-fitur kami yang interaktif dan informatif, termasuk forum diskusi, kuis kesehatan, kalkulator kesehatan, dan masih banyak lagi. Semua ini kami sediakan untuk membantu Anda mengambil langkah proaktif dalam menjaga dan meningkatkan kualitas hidup.</p>
         <h2>Kesehatan Anda, Prioritas Kami.</h2>
     </section>
-<<<<<<< HEAD
-=======
 
     <div class="gradient-line" style="margin-bottom: 0;"></div>
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
     <section class="services-grid container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -273,11 +206,7 @@
                 <div class="service-item">
                     <i class="fas fa-calculator"></i>
                     <h5>Kalkulator BMI Kesehatan</h5>
-<<<<<<< HEAD
-                    <a class="btn btn-link" href="{{ route('bmi.index') }}" method="POST">→</a>
-=======
                     <a class="btn btn-link" href="#">→</a>
->>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
