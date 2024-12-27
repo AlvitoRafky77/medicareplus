@@ -106,7 +106,6 @@
                 <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('artikel') }}">Artikel</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
-                <li class="nav-item"><a class="nav-link profile -icon" href="{{ route('edit') }}"><i class="fas fa-user"></i></a></li>
             </ul>
         </div>
     </div>
