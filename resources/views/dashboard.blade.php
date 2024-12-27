@@ -9,6 +9,8 @@
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <style>
    body {
             font-family: 'Roboto', sans-serif;
@@ -98,56 +100,36 @@
   </style>
  </head>
  <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-   <div class="container">
-    <a class="navbar-brand" href="#">
-     MEDICARE+
-    </a>
-    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-     <span class="navbar-toggler-icon">
-     </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Tentang Kita
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Layanan
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Forum
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Artikel
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        Kontak
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="{{ route('edit') }}" method="POST">
-        <i class="fas fa-user-circle profile-icon"></i>
-       </a>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
+        <div class="container">
+          <a class="navbar-brand" href="#">MEDICARE+</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Tentang Kita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Artikel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
   <section class="hero-section">
    <div class="container">
     <h1>
@@ -164,33 +146,36 @@
   <section class="info-cards">
    <div class="container">
     <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center" style="background-color: #1F2B6C;">
+              <div class="card-body d-flex justify-content-between align-items-center" style="color: white;">
+                <h5 class="card-title mb-0">
+                  Artikel Kesehatan Terbaru
+                </h5>
+                <box-icon type="solid" name="collection" color="white"></box-icon>
+              </div>
+            </div>
+          </div>                    
      <div class="col-md-4">
-      <div class="card text-center">
-       <div class="card-body">
-        <h5 class="card-title">
-         Artikel Kesehatan Terbaru
-        </h5>
-       </div>
+        <div class="card text-center" style="background-color: #BFD2F8;">
+          <div class="card-body d-flex justify-content-between align-items-center" style="color: #1F2B6C;">
+            <h5 class="card-title mb-0">
+              Forum Komunitas Diskusi
+            </h5>
+            <box-icon type='solid' name='conversation'></box-icon>
+          </div>
+        </div>
       </div>
-     </div>
-     <div class="col-md-4">
-      <div class="card text-center">
-       <div class="card-body">
-        <h5 class="card-title">
-         Forum Komunitas Diskusi
-        </h5>
-       </div>
-      </div>
-     </div>
-     <div class="col-md-4">
-      <div class="card text-center">
-       <div class="card-body">
-        <h5 class="card-title">
-         Konsultasi Live Chat
-        </h5>
-       </div>
-      </div>
-     </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="background-color: #159EEC;">
+          <div class="card-body d-flex justify-content-between align-items-center" style="color: white;">
+            <h5 class="card-title mb-0">
+              Konsultasi Live Chat
+            </h5>
+            <ion-icon name="people"></ion-icon>
+          </div>
+        </div>
+      </div>      
     </div>
    </div>
   </section>
@@ -302,95 +287,49 @@
     </a>
    </div>
   </section>
-  <footer class="footer">
-   <div class="container">
-    <div class="row">
-     <div class="col-md-4">
-      <h5>
-       MEDICARE+
-      </h5>
-      <p>
-       Leading the Way in Medical Excellence, Trusted Care.
-      </p>
-     </div>
-     <div class="col-md-2">
-      <h5>
-       Important Links
-      </h5>
-      <ul class="list-unstyled">
-       <li>
-        <a href="#">
-         Appointment
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Doctors
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Services
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         About Us
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div class="col-md-3">
-      <h5>
-       Contact Us
-      </h5>
-      <p>
-       Call: (237) 681-812-255
-      </p>
-      <p>
-       Email:
-       <a href="mailto:filidieneseo@gmail.com">
-        filidieneseo@gmail.com
-       </a>
-      </p>
-      <p>
-       Address: 0123 Some place, Some country
-      </p>
-     </div>
-     <div class="col-md-3">
-      <h5>
-       Newsletter
-      </h5>
-      <form>
-       <div class="input-group">
-        <input class="form-control" placeholder="Enter your email address" type="email"/>
-        <button class="btn btn-primary" type="submit">
-         <i class="fas fa-paper-plane">
-         </i>
-        </button>
-       </div>
-      </form>
-      <div class="social-icons mt-3">
-       <a href="#">
-        <i class="fab fa-linkedin">
-        </i>
-       </a>
-       <a href="#">
-        <i class="fab fa-facebook">
-        </i>
-       </a>
-       <a href="#">
-        <i class="fab fa-twitter">
-        </i>
-       </a>
-      </div>
-     </div>
+  <footer class="footer py-4" style="background-color: #1F2B6C; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style="color: white;">MEDICARE+</h5>
+                <p>Leading the Way in Medical Excellence, Trusted Care.</p>
+            </div>
+            <div class="col-md-2">
+                <h5 style="color: white;">Important Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Appointment</a></li>
+                    <li><a href="#" style="color: white;">Doctors</a></li>
+                    <li><a href="#" style="color: white;">Services</a></li>
+                    <li><a href="#" style="color: white;">About Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 style="color: white;">Contact Us</h5>
+                <p>Call: (237) 681-812-255</p>
+                <p>Email: <a href="mailto:filidieneseo@gmail.com" style="color: white;">filidieneseo@gmail.com</a></p>
+                <p>Address: 0123 Some place, Some country</p>
+            </div>
+            <div class="col-md-3">
+                <h5 style="color: white;">Newsletter</h5>
+                <form>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Enter your email address" type="email" />
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="social-icons mt-3">
+                    <a href="#" class="me-2" style="color: white;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="me-2" style="color: white;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2" style="color: white;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>© 2021 Hospital's name All Rights Reserved by PNTEC-LTD</p>
+        </div>
     </div>
-    <div class="text-center mt-4">
-     <p>
-      © 2021 Hospital's name All Rights Reserved by PNTEC-LTD
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script crossorigin="anonymous" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+3i5q5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5Y5i5
+</footer>   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
