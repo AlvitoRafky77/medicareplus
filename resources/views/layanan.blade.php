@@ -117,10 +117,10 @@
                         <a class="nav-link text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tentang Kita</a>
+                        <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Layanan</a>
+                        <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Forum</a>
@@ -178,7 +178,7 @@
                 <div class="service-item">
                     <i class="fas fa-book"></i>
                     <h5>Artikel Edukasi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('artikel') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -206,7 +206,7 @@
                 <div class="service-item">
                     <i class="fas fa-calculator"></i>
                     <h5>Kalkulator BMI Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('bmi.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">

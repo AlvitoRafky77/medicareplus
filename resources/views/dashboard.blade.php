@@ -109,23 +109,24 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home</a>
+                <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Tentang Kita</a>
+                <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Layanan</a>
+                <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Forum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Artikel</a>
+                <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Kontak</a>
               </li>
+              <li class="nav-item"><a class="nav-link profile -icon" href="{{ route('edit') }}"><i class="fas fa-user"></i></a></li>
             </ul>
           </div>
         </div>
@@ -190,7 +191,7 @@
     <p>
      MediCare+ adalah platform kesehatan terpercaya yang memudahkan Anda menjaga kesehatan fisik dan mental. Nikmati akses mudah ke informasi, layanan kesehatan, dan konsultasi ahli kapan saja. Mulai perjalanan sehat Anda bersama kami! Hidup sehat lebih mudah dengan MediCare+!
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('about') }}">
      Learn More
     </a>
    </div>

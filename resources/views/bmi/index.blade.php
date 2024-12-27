@@ -101,10 +101,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tentang Kita</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Tentang Kita</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('layanan') }}">Layanan</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Artikel</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('artikel') }}">Artikel</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
                 <li class="nav-item"><a class="nav-link profile -icon" href="{{ route('edit') }}"><i class="fas fa-user"></i></a></li>
             </ul>

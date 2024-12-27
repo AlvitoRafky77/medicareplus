@@ -9,7 +9,17 @@ class LayananController extends Controller
     // Menampilkan halaman layanan
     public function index()
     {
-        return view('layanan'); // Pastikan file layanan.blade.php ada di folder resources/views
+        return view('layanan');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function artikel()
+    {
+        return view('artikel');
     }
 }
 
