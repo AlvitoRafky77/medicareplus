@@ -140,7 +140,7 @@
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="EditProfile.html">
+       <a class="nav-link" href="{{ route('edit') }}" method="POST">
         <i class="fas fa-user-circle profile-icon"></i>
        </a>
       </li>
@@ -156,9 +156,9 @@
     <p>
      Caring for Life
     </p>
-    <button class="btn btn-primary">
-     Layanan Kami
-    </button>
+    <a class="btn btn-primary" href="{{ route('layanan') }}">
+        Layanan Kami
+    </a>
    </div>
   </section>
   <section class="info-cards">
