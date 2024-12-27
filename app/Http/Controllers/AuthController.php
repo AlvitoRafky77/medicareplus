@@ -26,17 +26,11 @@ class AuthController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'password' => bcrypt($request->password),
         ]);
 
-        if ($user)
-        {
             return redirect()->route('login.form')->with('success', 'Registration successful!');
-        }
-        else
-        {
-            return back()->with('error', 'Failed to register user.');
-        }
+
     }
 
     public function showLoginForm()
@@ -54,7 +48,8 @@ class AuthController extends Controller
         if (Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+
+            return redirect()->route('dashboard');
         }
 
         return back()->withErrors
@@ -62,6 +57,42 @@ class AuthController extends Controller
             'email' => 'The provided credentials do not match our records.',
         ]);
     }
+
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
+
+    public function edit_view()
+    {
+        return view('auth.edit');
+    }
+
+    public function edit(Request $request)
+    {
+        $user = Auth::user(); // Dapatkan user yang sedang login
+
+        // Validasi input
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:users,email,' . $user->id,
+            'password' => 'nullable|min:8|confirmed',
+        ]);
+
+        // Update data user
+        $user->name = $request->name;
+        $user->email = $request->email;
+
+        if ($request->filled('password')) {
+            $user->password = bcrypt($request->password);
+        }
+
+        $user->save(); // Simpan perubahan
+
+        return redirect()->route('edit.form')->with('success', 'Your data is updated successfully');
+    }
+
+
 
     public function logout(Request $request)
     {

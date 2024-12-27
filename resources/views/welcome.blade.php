@@ -153,9 +153,9 @@
     <p>
      Caring for Life
     </p>
-    <button class="btn btn-primary">
-     Layanan Kami
-    </button>
+    <a class="btn btn-primary" href="{{ route('layanan') }}">
+        Layanan Kami
+    </a>
    </div>
   </section>
   <section class="info-cards">
