@@ -123,7 +123,7 @@
                         <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('forum.index') }}">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
@@ -171,7 +171,7 @@
                 <div class="service-item">
                     <i class="fas fa-users"></i>
                     <h5>Forum Diskusi Kesehatan</h5>
-                    <a class="btn btn-link" href="{{ route('forum.index') }}">→</a>
+                    <a class="btn btn-link" href="{{ route('forums.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">

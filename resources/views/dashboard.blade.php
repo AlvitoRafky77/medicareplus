@@ -283,7 +283,7 @@
     <p>
      Jelajahi koleksi artikel dan video terbaru kami oleh para ahli dan disesuaikan untuk kebutuhan Anda. Temukan jawaban atas pertanyaan kesehatan Anda dan jadilah lebih percaya diri dalam menjaga kesehatan diri sendiri dan keluarga.
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('artikel') }}">
      Learn More
     </a>
    </div>
