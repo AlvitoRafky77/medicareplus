@@ -107,14 +107,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-            <a class="navbar-brand" href="#">MEDICARE+</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
@@ -123,10 +123,10 @@
                         <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forum.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Artikel</a>
+                        <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Kontak</a>
@@ -171,7 +171,7 @@
                 <div class="service-item">
                     <i class="fas fa-users"></i>
                     <h5>Forum Diskusi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('forum.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -185,7 +185,7 @@
                 <div class="service-item">
                     <i class="fas fa-video"></i>
                     <h5>Video Edukasi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('artikel') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
