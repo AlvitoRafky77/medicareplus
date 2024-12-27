@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\BMICalculatorController;
 use App\Http\Controllers\LayananController;
+use App\Http\Controllers\ChatController;
 
 Route::get('/', function ()
 {
@@ -36,3 +37,6 @@ Route::post('/bmi/calculate', [BMICalculatorController::class, 'calculate'])->na
 Route::get('/layanan', [LayananController::class, 'index'])->name('layanan');
 Route::get('/about', [LayananController::class, 'about'])->name('about');
 Route::get('/artikel', [LayananController::class, 'artikel'])->name('artikel');
+
+Route::get('/live-chat', [ChatController::class, 'index'])->name('chat.index');
+Route::post('/live-chat/send', [ChatController::class, 'send'])->name('chat.send');

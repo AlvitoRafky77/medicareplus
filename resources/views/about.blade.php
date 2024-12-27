@@ -47,7 +47,7 @@
                         <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
