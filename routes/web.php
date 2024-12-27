@@ -26,7 +26,7 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::resource('/forums', ForumController::class)->middleware('auth');
+Route::resource('forums', ForumController::class)->middleware('auth');
 
 Route::get('/bmi', [BMICalculatorController::class, 'index'])->name('bmi.index');
 Route::post('/bmi/calculate', [BMICalculatorController::class, 'calculate'])->name('bmi.calculate');
