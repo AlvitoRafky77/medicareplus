@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,3 +42,6 @@
 </div>
 </body>
 </html>
+=======
+<p>Hasil BMI Anda adalah: {{ $bmi }}</p>
+>>>>>>> 37caeaa78472d40fcd1bd4043ce6ec7111c6b7d8
