@@ -10,23 +10,42 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
+        .gradient-line {
+            height: 40px;
+            background: linear-gradient(to left, #0B185E, #0B185E, lightblue);
+            width: 100%;
+            margin-bottom: 20px; /* Tambahkan jarak di bawah gradient line */
+        }
         .navbar {
             background-color: #2c3e50;
         }
         .navbar-brand {
-            color: #fff;
+            font-size: 1.5rem;
             font-weight: bold;
+            color: #fff;
         }
         .navbar-nav .nav-link {
             color: #fff;
         }
         .navbar-nav .nav-link .fas {
-            font-size: 1.5rem; /* Increase the size of the profile icon */
+            font-size: 1.5rem;
         }
         .header-image {
             width: 100%;
             height: auto;
         }
+        .service-item {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .col-md-3 {
+            margin-bottom: 20px;
+        }
+
         .services-section {
             text-align: center;
             padding: 50px 20px;
@@ -45,14 +64,15 @@
         .services-grid {
             background-color: #2c3e50;
             padding: 50px 20px;
+            margin-bottom: 40px;
             border-radius: 15px;
+            margin-top: 40px;
         }
         .service-item {
             background-color: #ecf0f1;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            margin-bottom: 20px;
         }
         .service-item h5 {
             color: #2c3e50;
@@ -63,7 +83,7 @@
             color: #3498db;
         }
         .footer {
-            background-color: #2c3e50;
+            background-color: #1F2B6C;
             color: #fff;
             padding: 20px 0;
         }
@@ -85,42 +105,36 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
             <a class="navbar-brand" href="#">MEDICARE+</a>
-            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kita</a>
+                        <a class="nav-link text-white" href="#">Tentang Kita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Layanan</a>
+                        <a class="nav-link text-white" href="#">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Forum</a>
+                        <a class="nav-link text-white" href="#">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Artikel</a>
+                        <a class="nav-link text-white" href="#">Artikel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        <a class="nav-link text-white" href="#">Kontak</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <header>
-        <img alt="Doctor holding a clipboard" class="header-image" height="600" src="https://storage.googleapis.com/a1aa/image/XxpAevYDq4SHLSGTeusKRtQOV3IXRPowc4nsyn4pWEMCsDenA.jpg" width="1920"/>
-    </header>
+    </nav> 
     <section class="services-section">
         <h3 class="subheading">WELCOME TO OUR SERVICES</h3>
         <h2>LAYANAN KAMI</h2>
@@ -128,6 +142,8 @@
         <p>Jelajahi fitur-fitur kami yang interaktif dan informatif, termasuk forum diskusi, kuis kesehatan, kalkulator kesehatan, dan masih banyak lagi. Semua ini kami sediakan untuk membantu Anda mengambil langkah proaktif dalam menjaga dan meningkatkan kualitas hidup.</p>
         <h2>Kesehatan Anda, Prioritas Kami.</h2>
     </section>
+
+    <div class="gradient-line" style="margin-bottom: 0;"></div>
     <section class="services-grid container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
