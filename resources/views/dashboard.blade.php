@@ -14,7 +14,7 @@
             font-family: 'Roboto', sans-serif;
         }
         .navbar {
-            background-color: #2c3e50;
+            background-color: #0B185E;
         }
         .navbar-brand {
             font-size: 1.5rem;
@@ -110,7 +110,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
      <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-       <a class="nav-link" href="#">
+       <a class="nav-link" href="{{ route('dashboard') }}">
         Home
        </a>
       </li>
@@ -120,7 +120,7 @@
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="#">
+       <a class="nav-link" href="{{ route('layanan') }}">
         Layanan
        </a>
       </li>
@@ -140,7 +140,7 @@
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="EditProfile.html">
+       <a class="nav-link" href="{{ route('edit') }}" method="POST">
         <i class="fas fa-user-circle profile-icon"></i>
        </a>
       </li>
@@ -156,9 +156,9 @@
     <p>
      Caring for Life
     </p>
-    <button class="btn btn-primary">
-     Layanan Kami
-    </button>
+    <a class="btn btn-primary" href="{{ route('layanan') }}">
+        Layanan Kami
+    </a>
    </div>
   </section>
   <section class="info-cards">
@@ -278,7 +278,7 @@
     <p>
      Kami berkomitmen untuk mendukung kesehatan Anda dengan layanan yang mudah diakses, informatif, dan terpercaya. Bersama MediCare+, jadikan perjalanan kesehatan Anda lebih terarah dan bermakna.
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('layanan') }}">
      Learn More
     </a>
    </div>

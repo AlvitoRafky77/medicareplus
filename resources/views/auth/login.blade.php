@@ -96,9 +96,12 @@
 </head>
 <body>
     <div class="login-container">
+        @if(@session('success'))
+        {{session('success')}}
+        @endif
         <h2>Login Akun Anda</h2>
         <p>Silahkan Isi Data Dibawah</p>
-        <form action="{{ route('login') }}" method="POST" onsubmit="return validateLogin()">
+        <form action="{{ route('login') }}" method="POST">
             @csrf
             <input type="email" name="email" class="form-control" placeholder="Email" required/>
             <input type="password" name="password" class="form-control" placeholder="Password" required/>
