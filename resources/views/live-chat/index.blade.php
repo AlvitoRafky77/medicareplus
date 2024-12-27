@@ -72,9 +72,9 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Konsultasi Live Chat</a>
+            <a class="navbar-brand" href="{{ route('chat.dashboard') }}">Konsultasi Live Chat</a>
             <div class="ms-auto">
-                <button class="btn btn-light" onclick="location.href='{{ route('dashboard') }}'">Back</button>
+                <button class="btn btn-light" onclick="location.href='{{ route('chat.dashboard') }}'">Back</button>
             </div>
         </div>
     </nav>

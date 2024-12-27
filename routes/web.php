@@ -38,5 +38,6 @@ Route::get('/layanan', [LayananController::class, 'index'])->name('layanan');
 Route::get('/about', [LayananController::class, 'about'])->name('about');
 Route::get('/artikel', [LayananController::class, 'artikel'])->name('artikel');
 
+Route::get('/live-chat/dashboard', [ChatController::class, 'dashboardChat'])->name('chat.dashboard');
 Route::get('/live-chat', [ChatController::class, 'index'])->name('chat.index');
 Route::post('/live-chat/send', [ChatController::class, 'send'])->name('chat.send');

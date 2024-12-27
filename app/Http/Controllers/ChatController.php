@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class ChatController extends Controller
 {
+    public function dashboardChat()
+    {
+        return view ('live-chat.dashboard');
+    }
+
     public function index()
     {
         // Dapatkan pesan dari database (contoh data statis sementara)

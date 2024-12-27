@@ -164,7 +164,7 @@
                 <div class="service-item">
                     <i class="fas fa-comments"></i>
                     <h5>Konsultasi Live Chat</h5>
-                    <a class="btn btn-link" href="{{ route('chat.index') }}">→</a>
+                    <a class="btn btn-link" href="{{ route('chat.dashboard') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
