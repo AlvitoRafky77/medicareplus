@@ -26,7 +26,9 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::resource('/forums', ForumController::class)->middleware('auth');
+Route::resource('forums', ForumController::class);
+Route::get('/forums/{forum}/edit', [ForumController::class, 'edit'])->name('forums.edit');
+Route::put('/forums/{forum}', [ForumController::class, 'update'])->name('forums.update');
 
 Route::get('/bmi', [BMICalculatorController::class, 'index'])->name('bmi.index');
 Route::post('/bmi/calculate', [BMICalculatorController::class, 'calculate'])->name('bmi.calculate');

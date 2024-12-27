@@ -102,7 +102,7 @@
  <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-          <a class="navbar-brand" href="#">MEDICARE+</a>
+          <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -118,7 +118,7 @@
                 <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Forum</a>
+                <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>

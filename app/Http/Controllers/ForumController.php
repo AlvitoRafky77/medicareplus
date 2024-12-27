@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Forum; // Tambahkan ini
 
 class ForumController extends Controller
 {
@@ -54,7 +55,7 @@ class ForumController extends Controller
         ]);
 
         $forum->update($request->only('title', 'content'));
-        return redirect()->route('forums.index');
+        return redirect()->route('forums.index')->with('success', 'Forum updated successfully!');
     }
 
     public function destroy(Forum $forum)
