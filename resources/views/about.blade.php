@@ -69,14 +69,15 @@
 
     <div class="gradient-line" style="margin-bottom: 0;"></div>
 
-    <section class="py-5 bg-light">
-        <div class="container">
+    <section class="py-5" style="background-color: #8AC0FF;">
+        <div class="container text-center">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="mb-4 text-center">Visi dan Misi Kami</h2>
-                    <p><strong>Visi Kami:</strong> Menjadi platform digital kesehatan terdepan yang mendukung kehidupan sehat bagi semua orang.</p>
-                    <p><strong>Misi Kami:</strong></p>
-                    <ul>
+                <div class="col-md-12">
+                    <h2 class="mb-4" style="padding-bottom: 20px;"><strong>Visi dan Misi Kami</strong></h2>
+                    <h5><strong>Visi:</strong></h5>
+                    <p>Menjadi platform digital kesehatan terdepan yang mendukung kehidupan sehat bagi semua orang.</p>
+                    <h5><strong>Misi:</strong></h5>
+                    <ul class="list-unstyled">
                         <li>Menyediakan informasi kesehatan yang akurat dan mudah diakses.</li>
                         <li>Memberikan layanan kesehatan inovatif berbasis teknologi.</li>
                         <li>Memberdayakan pengguna untuk berpartisipasi untuk meningkatkan kesehatan mereka.</li>
