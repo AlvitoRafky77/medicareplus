@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicare+</title>
+    <title>Kalender Kesehatan Internasional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .gradient-line {
@@ -25,10 +25,29 @@
         .navbar-nav .nav-link .fas {
             font-size: 1.5rem;
         }
+        body {
+            background-color: #f8f9fa;
+        }
+        .calendar {
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .btn-primary {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
             <a class="navbar-brand" href="#">MEDICARE+</a>
@@ -59,58 +78,98 @@
             </div>
         </div>
     </nav>
-    <header class="bg-light py-5">
-        <div class="container text-center">
-            <h5 style="color: #159EEC;">SELAMAT DATANG DI MEDICARE+</h5>
-            <h1 class="display-4">Best Care for Your Good Health</h1>
-            <p class="lead">Kami hadir untuk memberikan solusi digital di bidang kesehatan. Dengan layanan inovatif, kami mempermudah masyarakat mendapatkan informasi kesehatan kapan saja dan di mana saja.</p>
-        </div>
-    </header>
-
-    <div class="gradient-line" style="margin-bottom: 0;"></div>
-
-    <section class="py-5" style="background-color: #8AC0FF;">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <h2 class="mb-4" style="padding-bottom: 20px;"><strong>Visi dan Misi Kami</strong></h2>
-                    <h5><strong>Visi:</strong></h5>
-                    <p>Menjadi platform digital kesehatan terdepan yang mendukung kehidupan sehat bagi semua orang.</p>
-                    <h5><strong>Misi:</strong></h5>
-                    <ul class="list-unstyled">
-                        <li>Menyediakan informasi kesehatan yang akurat dan mudah diakses.</li>
-                        <li>Memberikan layanan kesehatan inovatif berbasis teknologi.</li>
-                        <li>Memberdayakan pengguna untuk berpartisipasi untuk meningkatkan kesehatan mereka.</li>
-                    </ul>
+    <!-- Calendar Section -->
+    <div class="container">
+        <div class="calendar">
+            <h2 class="text-center">Kalender Hari Kesehatan Internasional</h2>
+            <p class="text-center text-muted">Jadwal Penting Sepanjang Tahun</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Sidebar -->
+                    <div class="bg-light p-3 rounded">
+                        <h5>Peringatan Penting</h5>
+                        <ul class="list-unstyled">
+                            <li>✔ Hari Kesehatan Dunia (7 April)</li>
+                            <li>✔ Hari Malaria Sedunia (25 April)</li>
+                            <li>✔ Hari Tanpa Tembakau Sedunia (31 Mei)</li>
+                        </ul>
+                        <h5>Bulan Khusus</h5>
+                        <p>✔ Oktober: Bulan Kesadaran Kanker Payudara</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Calendar -->
+                    <table class="table table-bordered">
+                        <thead class="table-primary text-center">
+                            <tr>
+                                <th>Bulan</th>
+                                <th>Hari</th>
+                                <th>Deskripsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Januari</td>
+                                <td>4</td>
+                                <td>Hari Braille Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Februari</td>
+                                <td>4</td>
+                                <td>Hari Kanker Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Maret</td>
+                                <td>24</td>
+                                <td>Hari Tuberkulosis Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td>7</td>
+                                <td>Hari Kesehatan Dunia</td>
+                            </tr>
+                            <tr>
+                                <td>Mei</td>
+                                <td>31</td>
+                                <td>Hari Tanpa Tembakau Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Juni</td>
+                                <td>14</td>
+                                <td>Hari Donor Darah Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Juli</td>
+                                <td>28</td>
+                                <td>Hari Hepatitis Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td>29</td>
+                                <td>Hari Jantung Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Oktober</td>
+                                <td>10</td>
+                                <td>Hari Kesehatan Mental Sedunia</td>
+                            </tr>
+                            <tr>
+                                <td>Desember</td>
+                                <td>1</td>
+                                <td>Hari AIDS Sedunia</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <div class="gradient-line" style="margin-bottom: 0;"></div>
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Mengapa Memilih MediCare+ ?</h2>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <h5>Layanan Inovatif</h5>
-                    <p>Fitur canggih mulai dari panduan hingga monitoring kesehatan.</p>
-                </div>
-                <div class="col-md-3">
-                    <h5>Akses Mudah</h5>
-                    <p>Platform yang dapat diakses kapan saja melalui perangkat Anda.</p>
-                </div>
-                <div class="col-md-3">
-                    <h5>Informasi Terpercaya</h5>
-                    <p>Artikel, layanan, dan dukungan berbasis data kesehatan aktual.</p>
-                </div>
-                <div class="col-md-3">
-                    <h5>Fokus pada Pengguna</h5>
-                    <p>Fitur dirancang untuk kebutuhan kesehatan individual Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="gradient-line" style="margin-bottom: 0; margin-top: 30px;"></div>
+    <div class="text-center mt-5">
+        <h3>Kelola Pengingat dan Jadwal Kesehatan Anda</h3>
+        <a href="#" class="btn btn-primary mt-3">Atur Pengingat</a>
+    </div>
 
     <footer class="footer py-4" style="background-color: #1F2B6C; color: white;">
         <div class="container">
