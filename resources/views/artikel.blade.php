@@ -108,7 +108,7 @@
                             <h5 class="card-title">Kesehatan Nutri & Makanan Super yang Harus Anda Konsumsi</h5>
                             <p class="card-text">Article is about nutritional tips.</p>
                             <p>50 views | 1.2k likes | 1 min ago</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <a href="https://www.alodokter.com/ini-makanan-sehat-yang-perlu-dikonsumsi-setiap-hari" class="btn btn-primary" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                         <div class="card-body">
                             <h5 class="card-title">"5 Gejala yang Bisa Terlihat dari Hasil Tes Darah Anda"</h5>
                             <p class="card-text">Video ini mengulas lima gejala kesehatan yang sering kali terdeteksi melalui pemeriksaan darah, seperti anemia, infeksi, atau risiko diabetes.</p>
-                            <a href="#" class="btn btn-primary">Buka Video</a>
+                            <a href="https://www.youtube.com/watch?v=CGMCAWAUWsM" class="btn btn-primary" target="_blank">Buka Video</a>
                         </div>
                     </div>
                 </div>

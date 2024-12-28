@@ -54,26 +54,26 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-            <a class="navbar-brand" href="#">MEDICARE+</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tentang Kita</a>
+                        <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Layanan</a>
+                        <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Artikel</a>
+                        <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Kontak</a>
@@ -88,26 +88,26 @@
             <h4>My Reminder</h4>
             <ul class="list-unstyled mt-3">
                 <li class="d-flex align-items-center mb-3">
-                    <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Profile">
+                    <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" class="rounded-circle me-3" alt="Profile" style="width: 50px; height: 50px;">
                     <div>
                         <strong>John Adams</strong> - Pemeriksaan Medis <span class="text-danger">Hari ini!</span>
                     </div>
                 </li>
                 <li class="d-flex align-items-center mb-3">
-                    <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Profile">
+                    <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" class="rounded-circle me-3" alt="Profile" style="width: 50px; height: 50px;">
                     <div>
-                        <strong>John Adams</strong> - Vaksinasi <span class="text-warning">2 Hari lagi!</span>
+                        <strong>John Adams</strong> - Vaksinasi <span class="text-warning">2 Hari lagi!</span>v
                     </div>
                 </li>
                 <li class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Profile">
+                    <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" class="rounded-circle me-3" alt="Profile" style="width: 50px; height: 50px;">
                     <div>
                         <strong>John Adams</strong> - Konsultasi <span class="text-primary">4 Hari lagi!</span>
                     </div>
                 </li>
             </ul>
             <div class="text-center">
-                <button class="btn btn-primary mt-3">Lihat Jadwal</button>
+                <a class="btn btn-primary mt-3" href="{{ route('jadwal') }}" >Lihat Jadwal</a>
             </div>
         </div>
     </div>

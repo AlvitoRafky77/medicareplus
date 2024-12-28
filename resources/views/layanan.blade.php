@@ -150,7 +150,7 @@
                 <div class="service-item">
                     <i class="fas fa-calendar-alt"></i>
                     <h5>Pengingat Jadwal Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('pengingat') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -199,7 +199,7 @@
                 <div class="service-item">
                     <i class="fas fa-calendar"></i>
                     <h5>Kalender Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('kalender') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
