@@ -107,26 +107,26 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-            <a class="navbar-brand" href="#">MEDICARE+</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tentang Kita</a>
+                        <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Layanan</a>
+                        <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Artikel</a>
+                        <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Kontak</a>
@@ -134,12 +134,12 @@
                 </ul>
             </div>
         </div>
-    </nav> 
+    </nav>
     <section class="services-section">
         <h3 class="subheading">WELCOME TO OUR SERVICES</h3>
         <h2>LAYANAN KAMI</h2>
-        <p>Di MediCare+, kami menghadirkan berbagai layanan yang dirancang khusus untuk mendukung perjalanan kesehatan Anda. Mulai dari pencarian fasilitas kesehatan hingga konsultasi langsung dengan ahli, kami berkomitmen memberikan kemudahan dan kenyamanan bagi Anda.</p>
-        <p>Jelajahi fitur-fitur kami yang interaktif dan informatif, termasuk forum diskusi, kuis kesehatan, kalkulator kesehatan, dan masih banyak lagi. Semua ini kami sediakan untuk membantu Anda mengambil langkah proaktif dalam menjaga dan meningkatkan kualitas hidup.</p>
+        <p>Di MediCare+, kami menghadirkan berbagai layanan yang dirancang khusus untuk mendukung perjalanan kesehatan Anda. Mulai dari pencarian fasilitas kesehatan hingga konsultasi langsung dengan ahli, kami berkomitmen memberikan kemudahan dan kenyamanan bagi Anda.<br>
+            Jelajahi fitur-fitur kami yang interaktif dan informatif, termasuk forum diskusi, kuis kesehatan, kalkulator kesehatan, dan masih banyak lagi. Semua ini kami sediakan untuk membantu Anda mengambil langkah proaktif dalam menjaga dan meningkatkan kualitas hidup.</p>
         <h2>Kesehatan Anda, Prioritas Kami.</h2>
     </section>
 
@@ -164,28 +164,28 @@
                 <div class="service-item">
                     <i class="fas fa-comments"></i>
                     <h5>Konsultasi Live Chat</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('chat.dashboard') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <i class="fas fa-users"></i>
                     <h5>Forum Diskusi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('forums.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <i class="fas fa-book"></i>
                     <h5>Artikel Edukasi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('artikel') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <i class="fas fa-video"></i>
                     <h5>Video Edukasi Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('artikel') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -206,7 +206,7 @@
                 <div class="service-item">
                     <i class="fas fa-calculator"></i>
                     <h5>Kalkulator BMI Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('bmi.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">

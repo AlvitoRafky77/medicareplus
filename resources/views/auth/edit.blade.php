@@ -51,16 +51,11 @@
         .btn-save:hover {
             background-color: #0056b3;
         }
-        .profile-pic {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: #6c757d;
+        .btn-danger {
+            background-color: #dc3545;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
         }
     </style>
 </head>
@@ -76,6 +71,11 @@
                 <i class="fas fa-pencil-alt"></i>
                 Edit profile
             </a>
+            <!-- Tombol Logout -->
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="btn btn-danger w-100 mt-3">Logout</button>
+            </form>
         </div>
         <div class="content flex-grow-1">
             <div class="d-flex justify-content-between align-items-center mb-4">

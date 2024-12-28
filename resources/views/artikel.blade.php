@@ -48,26 +48,26 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-            <a class="navbar-brand" href="#">MEDICARE+</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tentang Kita</a>
+                        <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Layanan</a>
+                        <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Forum</a>
+                        <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Artikel</a>
+                        <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Kontak</a>
@@ -75,24 +75,24 @@
                 </ul>
             </div>
         </div>
-    </nav> 
+    </nav>
 
     <main class="container-fluid">
         <section class="text-center my-4" style="padding-top: 20px; padding-bottom: 20px;">
             <h2 style="color: #159EEC;">WELCOME TO MEDICARE HOSPITAL ARTICLE</h2>
             <h3 style="color: #1F2B6C;">Artikel & Video Edukasi Pilihan</h3>
-            
+
             <ul class="list-unstyled text-left mx-auto" style="max-width: 600px;">
                 <li>• Gaya Hidup Sehat</li>
                 <li>• Kesehatan Nutrisi</li>
                 <li>• Olahraga</li>
             </ul>
-        
+
             <p style="padding-left: 20px; padding-right: 20px;">
-                Medicare Hospital Article hadir sebagai sumber informasi terpercaya 
-                untuk Anda yang peduli dengan kesehatan dan kesejahteraan. Kami menyediakan 
-                berbagai artikel edukatif yang mencakup beragam topik, mulai dari panduan 
-                menjalani gaya hidup sehat, tips menjaga kesehatan melalui nutrisi yang tepat, 
+                Medicare Hospital Article hadir sebagai sumber informasi terpercaya
+                untuk Anda yang peduli dengan kesehatan dan kesejahteraan. Kami menyediakan
+                berbagai artikel edukatif yang mencakup beragam topik, mulai dari panduan
+                menjalani gaya hidup sehat, tips menjaga kesehatan melalui nutrisi yang tepat,
                 hingga manfaat olahraga untuk tubuh.
             </p>
         </section>
@@ -124,7 +124,6 @@
                 </div>
             </div>
         </section>
-        
 
         <div class="gradient-line" style="margin-top: 0;"></div>
 
@@ -205,6 +204,6 @@
                 <p>© 2021 Hospital's name All Rights Reserved by PNTEC-LTD</p>
             </div>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>

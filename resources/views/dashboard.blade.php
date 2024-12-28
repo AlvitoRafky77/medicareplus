@@ -16,7 +16,7 @@
             font-family: 'Roboto', sans-serif;
         }
         .navbar {
-            background-color: #2c3e50;
+            background-color: #0B185E;
         }
         .navbar-brand {
             font-size: 1.5rem;
@@ -102,34 +102,35 @@
  <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0B185E;">
         <div class="container">
-          <a class="navbar-brand" href="#">MEDICARE+</a>
+          <a class="navbar-brand" href="{{ route('dashboard') }}">MEDICARE+</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home</a>
+                <a class="nav-link text-white" href="{{ route('dashboard') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Tentang Kita</a>
+                <a class="nav-link text-white" href="{{ route('about') }}">Tentang Kita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Layanan</a>
+                <a class="nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Forum</a>
+                <a class="nav-link text-white" href="{{ route('forums.index') }}">Forum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Artikel</a>
+                <a class="nav-link text-white" href="{{ route('artikel') }}">Artikel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Kontak</a>
               </li>
+              <li class="nav-item"><a class="nav-link profile -icon" href="{{ route('edit') }}"><i class="fas fa-user"></i></a></li>
             </ul>
           </div>
         </div>
-      </nav>      
+      </nav>
   <section class="hero-section">
    <div class="container">
     <h1>
@@ -155,7 +156,7 @@
                 <box-icon type="solid" name="collection" color="white"></box-icon>
               </div>
             </div>
-          </div>                    
+          </div>
      <div class="col-md-4">
         <div class="card text-center" style="background-color: #BFD2F8;">
           <div class="card-body d-flex justify-content-between align-items-center" style="color: #1F2B6C;">
@@ -175,7 +176,7 @@
             <ion-icon name="people"></ion-icon>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
    </div>
   </section>
@@ -190,7 +191,7 @@
     <p>
      MediCare+ adalah platform kesehatan terpercaya yang memudahkan Anda menjaga kesehatan fisik dan mental. Nikmati akses mudah ke informasi, layanan kesehatan, dan konsultasi ahli kapan saja. Mulai perjalanan sehat Anda bersama kami! Hidup sehat lebih mudah dengan MediCare+!
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('about') }}">
      Learn More
     </a>
    </div>
@@ -263,7 +264,7 @@
     <p>
      Kami berkomitmen untuk mendukung kesehatan Anda dengan layanan yang mudah diakses, informatif, dan terpercaya. Bersama MediCare+, jadikan perjalanan kesehatan Anda lebih terarah dan bermakna.
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('layanan') }}">
      Learn More
     </a>
    </div>
@@ -282,7 +283,7 @@
     <p>
      Jelajahi koleksi artikel dan video terbaru kami oleh para ahli dan disesuaikan untuk kebutuhan Anda. Temukan jawaban atas pertanyaan kesehatan Anda dan jadilah lebih percaya diri dalam menjaga kesehatan diri sendiri dan keluarga.
     </p>
-    <a class="btn btn-link" href="#">
+    <a class="btn btn-link" href="{{ route('artikel') }}">
      Learn More
     </a>
    </div>
@@ -330,6 +331,6 @@
             <p>© 2021 Hospital's name All Rights Reserved by PNTEC-LTD</p>
         </div>
     </div>
-</footer>   
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
