@@ -179,9 +179,48 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 Medicare+. All Rights Reserved.</p>
+    <footer class="footer py-4" style="background-color: #1F2B6C; color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: white;">MEDICARE+</h5>
+                    <p>Leading the Way in Medical Excellence, Trusted Care.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 style="color: white;">Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: white;">Appointment</a></li>
+                        <li><a href="#" style="color: white;">Doctors</a></li>
+                        <li><a href="#" style="color: white;">Services</a></li>
+                        <li><a href="#" style="color: white;">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: white;">Contact Us</h5>
+                    <p>Call: (237) 681-812-255</p>
+                    <p>Email: <a href="mailto:filidieneseo@gmail.com" style="color: white;">filidieneseo@gmail.com</a></p>
+                    <p>Address: 0123 Some place, Some country</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: white;">Newsletter</h5>
+                    <form>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Enter your email address" type="email" />
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2" style="color: white;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2" style="color: white;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>© 2021 Medicare+ All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 
