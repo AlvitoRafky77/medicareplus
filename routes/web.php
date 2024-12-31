@@ -6,6 +6,7 @@ use App\Http\Controllers\ForumController;
 use App\Http\Controllers\BMICalculatorController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\HealthServiceController;
 
 Route::get('/', function ()
 {
@@ -47,3 +48,5 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/pengingat', [ReminderController::class, 'showPengingat'])->name('pengingat');
 Route::get('/jadwal', [ReminderController::class, 'showJadwal'])->name('jadwal');
 Route::get('/kalender', [ReminderController::class, 'showKalender'])->name('kalender');
+
+Route::get('/health-services', [HealthServiceController::class, 'index'])->name('health-services.index');

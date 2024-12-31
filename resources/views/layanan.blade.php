@@ -157,7 +157,7 @@
                 <div class="service-item">
                     <i class="fas fa-search"></i>
                     <h5>Pencarian Layanan Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('health-services.index') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
