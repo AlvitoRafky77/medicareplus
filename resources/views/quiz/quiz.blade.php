@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Kesehatan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .gradient-line {
@@ -58,14 +59,16 @@
             </div>
         </div>
     </nav>
-   
+
         <div class="row">
-            <div class="col-md-8 mt-4">
+            <div class="col-md-8 mt-4 text-center">
                 <h2>Quiz Kesehatan</h2>
+            </div>
+            <div class="col-md-8 mt-4">
                 <div class="card">
                     <div class="card-body">
                         <video controls class="w-100 mb-3">
-                            <source src="https://via.placeholder.com/placeholder-video.mp4" type="video/mp4">
+                            <source src="/video/run-cinematic-fitness-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <h5>Tes Kebugaran Tubuh: Seberapa Fit Kamu?</h5>

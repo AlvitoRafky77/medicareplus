@@ -88,9 +88,9 @@
     <section class="custom-section">
         <div class="row">
             <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Avatar" class="rounded-circle mb-3">
-                <h5>Nama User</h5>
-                <p>Level: Advanced</p>
+                <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" alt="Avatar" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h5>Fadel Adzandika</h5>
+                <p>Level : Advanced</p>
             </div>
             <div class="col-md-4 text-center">
                 <h5 class="custom-title">Statistik</h5>
@@ -109,9 +109,9 @@
             <div class="col-md-4 text-center">
                 <h5 class="custom-title">Medali</h5>
                 <div class="d-flex justify-content-center">
-                    <img src="https://via.placeholder.com/80" alt="Medal 1" class="me-2">
-                    <img src="https://via.placeholder.com/80" alt="Medal 2" class="me-2">
-                    <img src="https://via.placeholder.com/80" alt="Medal 3">
+                    <img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal 1" class="me-2" style="width: 80px; height: 80px;">
+                    <img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal 2" class="me-2" style="width: 80px; height: 80px;">
+                    <img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal 3" class="me-2" style="width: 80px; height: 80px;">
                 </div>
             </div>
         </div>
@@ -137,17 +137,24 @@
                 <tbody>
                     <tr>
                         <td>#1</td>
-                        <td>Karl Rah</td>
-                        <td><img src="https://via.placeholder.com/40" alt="Medal"></td>
+                        <td>Rafik Rais</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal" style="width: 40px; height: 40px;"></td>
                         <td>1000</td>
                         <td>500</td>
                     </tr>
                     <tr>
                         <td>#2</td>
-                        <td>Karl Rah</td>
-                        <td><img src="https://via.placeholder.com/40" alt="Medal"></td>
+                        <td>Fadia Azizandra</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal" style="width: 40px; height: 40px;"></td>
                         <td>900</td>
                         <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>Fadel Adzandika</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20220729/ourmid/pngtree-champion-award-medal-icon-png-image_6091841.png" alt="Medal" style="width: 40px; height: 40px;"></td>
+                        <td>37</td>
+                        <td>100</td>
                     </tr>
                 </tbody>
             </table>

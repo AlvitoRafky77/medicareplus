@@ -192,7 +192,7 @@
                 <div class="service-item">
                     <i class="fas fa-question-circle"></i>
                     <h5>Kuis Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('quiz.dashboard') }}">→</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -213,7 +213,7 @@
                 <div class="service-item">
                     <i class="fas fa-medal"></i>
                     <h5>Poin dan Badges Kesehatan</h5>
-                    <a class="btn btn-link" href="#">→</a>
+                    <a class="btn btn-link" href="{{ route('quiz.poin') }}">→</a>
                 </div>
             </div>
         </div>

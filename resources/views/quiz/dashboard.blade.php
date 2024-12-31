@@ -60,7 +60,7 @@
     </nav>
         <div class="row mt-5">
             <div class="col-md-12 text-center">
-                <img src="https://via.placeholder.com/150" alt="User Image" class="rounded-circle">
+                <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" class="rounded-circle me-3" alt="Profile" style="width: 150px; height: 150px;">
                 <h2>Selamat Datang, Fadel Adzandika!</h2>
                 <div class="progress my-3" style="height: 10px;">
                     <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -101,35 +101,37 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Quiz 1">
+                            <img src="https://www.telkomsel.com/sites/default/files/2023-10/article-01%20%283%29.png" class="card-img-top" alt="Quiz 1">
                             <div class="card-body">
                                 <h5 class="card-title">Tes Kebugaran Tubuh</h5>
                                 <p class="card-text">15 min</p>
+                                <a href="{{ route('quiz.form') }}" class="btn btn-primary">Take Quiz</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Quiz 2">
+                            <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/23/2023/12/25/IMG_20231225_044505-2295083804.jpg" class="card-img-top" alt="Quiz 2">
                             <div class="card-body">
                                 <h5 class="card-title">Tes Makanan Sehat</h5>
                                 <p class="card-text">15 min</p>
+                                <a href="#" class="btn btn-primary">Take Quiz</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Quiz 3">
+                            <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1623207171/attached_image/memaksimalisasi-manfaat-fitness-di-gym.jpg" class="card-img-top" alt="Quiz 3">
                             <div class="card-body">
                                 <h5 class="card-title">Keeping Debt Safe</h5>
                                 <p class="card-text">15 min</p>
+                                <a href="#" class="btn btn-primary">Take Quiz</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <footer class="footer py-4" style="background-color: #1F2B6C; color: white; margin-top: 40px;">
             <div class="container">

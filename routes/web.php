@@ -7,6 +7,7 @@ use App\Http\Controllers\BMICalculatorController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\HealthServiceController;
+use App\Http\Controllers\QuizController;
 
 Route::get('/', function ()
 {
@@ -50,3 +51,7 @@ Route::get('/jadwal', [ReminderController::class, 'showJadwal'])->name('jadwal')
 Route::get('/kalender', [ReminderController::class, 'showKalender'])->name('kalender');
 
 Route::get('/health-services', [HealthServiceController::class, 'index'])->name('health-services.index');
+
+Route::get('/dashboard-quiz', [QuizController::class, 'dashboardQuiz'])->name('quiz.dashboard');
+Route::get('/quiz', [QuizController::class, 'quizForm'])->name('quiz.form');
+Route::get('/poin', [QuizController::class, 'showPoin'])->name('quiz.poin');
