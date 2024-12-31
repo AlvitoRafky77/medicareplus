@@ -96,7 +96,7 @@
                 <li class="d-flex align-items-center mb-3">
                     <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg" class="rounded-circle me-3" alt="Profile" style="width: 50px; height: 50px;">
                     <div>
-                        <strong>John Adams</strong> - Vaksinasi <span class="text-warning">2 Hari lagi!</span>v
+                        <strong>John Adams</strong> - Vaksinasi <span class="text-warning">2 Hari lagi!</span>
                     </div>
                 </li>
                 <li class="d-flex align-items-center">
