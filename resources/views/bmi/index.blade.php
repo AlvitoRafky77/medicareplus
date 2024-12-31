@@ -103,7 +103,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Tentang Kita</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('layanan') }}">Layanan</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('forum.index') }}">Forum</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('forums.index') }}">Forum</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('artikel') }}">Artikel</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
             </ul>
