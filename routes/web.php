@@ -39,8 +39,10 @@ Route::get('/about', [LayananController::class, 'about'])->name('about');
 Route::get('/artikel', [LayananController::class, 'artikel'])->name('artikel');
 
 Route::get('/live-chat/dashboard', [ChatController::class, 'dashboardChat'])->name('chat.dashboard');
-Route::get('/live-chat', [ChatController::class, 'index'])->name('chat.index');
-Route::post('/live-chat/send', [ChatController::class, 'send'])->name('chat.send');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/live-chat', [ChatController::class, 'index'])->name('chat.index');
+    Route::post('/live-chat/send', [ChatController::class, 'send'])->name('chat.send');
+});
 
 Route::get('/pengingat', [ReminderController::class, 'showPengingat'])->name('pengingat');
 Route::get('/jadwal', [ReminderController::class, 'showJadwal'])->name('jadwal');

@@ -86,8 +86,8 @@
             </div>
             <div class="chat-messages" id="chatMessages">
                 @foreach ($messages as $message)
-                    <div class="message {{ $message['type'] }}">
-                        <div class="bubble">{{ $message['content'] }}</div>
+                    <div class="message {{ $message->type }}">
+                        <div class="bubble">{{ $message->content }}</div>
                     </div>
                 @endforeach
             </div>
