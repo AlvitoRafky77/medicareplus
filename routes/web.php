@@ -53,5 +53,7 @@ Route::get('/kalender', [ReminderController::class, 'showKalender'])->name('kale
 Route::get('/health-services', [HealthServiceController::class, 'index'])->name('health-services.index');
 
 Route::get('/dashboard-quiz', [QuizController::class, 'dashboardQuiz'])->name('quiz.dashboard');
-Route::get('/quiz', [QuizController::class, 'quizForm'])->name('quiz.form');
+Route::get('/quiz-form', [QuizController::class, 'quizForm'])->name('quiz.form');
 Route::get('/poin', [QuizController::class, 'showPoin'])->name('quiz.poin');
+Route::get('/quiz-play', [QuizController::class, 'index'])->name('quiz.index');
+Route::post('/quiz/result', [QuizController::class, 'result'])->name('quiz.result');

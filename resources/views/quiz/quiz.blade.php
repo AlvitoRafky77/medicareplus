@@ -88,7 +88,7 @@
                         <p><strong>Date:</strong> 16/12/2024</p>
                         <p><strong>Time Limit:</strong> 15 Mins</p>
                         <p><strong>Attempts:</strong> Twice</p>
-                        <button class="btn btn-primary w-100">Start Quiz</button>
+                        <a class="btn btn-primary w-100" href="{{ route('quiz.index') }}">Start Quiz</a>
                     </div>
                 </div>
             </div>
